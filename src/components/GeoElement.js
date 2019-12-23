@@ -33,7 +33,6 @@ const StyledContainer = styled.div`
    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
    animation: ${props => anim(props)} ${props => props.duration}s ease-in-out infinite; 
    animation-delay: ${props => props.delay}s;
-   
    ::after {
       content: '';
       position: absolute;
@@ -48,14 +47,15 @@ const StyledContainer = styled.div`
 
 
 const GeoElement = () => {
-      const duration = getRandomNumber(minDuration, maxDuration);
-      const delay = getRandomNumber(-duration, 0);
-      console.log(delay);
-      const initX = getRandomNumber(minInit, maxInit);
-      const initY = getRandomNumber(minInit, maxInit);
-      const x = getRandomNumber(minMovement, maxMovement);
-      const y = getRandomNumber(minMovement, maxMovement);
-      const scale = getRandomNumber(minScale, maxScale);
+
+   const duration = getRandomNumber(minDuration, maxDuration);
+   const delay = getRandomNumber(-duration, 0);
+   console.log(delay);
+   const initX = getRandomNumber(minInit, maxInit);
+   const initY = getRandomNumber(minInit, maxInit);
+   const x = getRandomNumber(minMovement, maxMovement);
+   const y = getRandomNumber(minMovement, maxMovement);
+   const scale = getRandomNumber(minScale, maxScale);
 
    return ( 
       <StyledContainer {...{duration, delay, initX, initY, x, y, scale}}></StyledContainer>
