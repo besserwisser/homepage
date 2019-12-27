@@ -1,3 +1,4 @@
+// For portrait. It switches when landscape.
 export const horizontalCount = 3;
 export const verticalCount = 4;
 export const totalCount = horizontalCount * verticalCount;

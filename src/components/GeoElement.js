@@ -30,7 +30,7 @@ const StyledContainer = styled.div`
    height: 100%;
    border-radius: 50%;
    background-color: ${color};
-   box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
+   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.5);
    animation: ${props => anim(props)} ${props => props.duration}s ease-in-out infinite; 
    animation-delay: ${props => props.delay}s;
    ::after {
