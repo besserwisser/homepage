@@ -4,8 +4,8 @@ import {StyledContainer} from './GeoElement.js';
 
 const MovableContainer = styled(StyledContainer)`
    position: absolute;
-   width: 20vw;
-   height: 20vw;
+   width: 20vh;
+   height: 20vh;
    transition: opacity 600ms ease-in-out;
 `
 
