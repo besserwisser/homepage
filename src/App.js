@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Filter from "./components/Filter";
 import GeoElement from "./components/GeoElement";
 import { totalCount, horizontalCount, verticalCount, gap } from "./config";
+import MovableGeoElement from "./components/MovableGeoElement";
 
 const StyledContainer = styled.div`
   width: 100%;
@@ -22,11 +23,13 @@ const StyledContainer = styled.div`
 function App() {
   const Geos = [...Array(totalCount)].map((el, i) => <GeoElement key={i} />);
 
-  console.log(Geos);
   return (
     <>
       <Filter></Filter>
-      <StyledContainer>{Geos}</StyledContainer>
+      <StyledContainer>
+        {Geos}
+        <MovableGeoElement></MovableGeoElement>
+      </StyledContainer>
     </>
   );
 }

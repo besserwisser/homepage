@@ -24,7 +24,7 @@ const anim = ({x, y, scale, initX, initY}) => keyframes`
    }
 `
 
-const StyledContainer = styled.div`
+export const StyledContainer = styled.div`
    display: inline-block;
    width: 100%;
    height: 100%;
@@ -50,7 +50,6 @@ const GeoElement = () => {
 
    const duration = getRandomNumber(minDuration, maxDuration);
    const delay = getRandomNumber(-duration, 0);
-   console.log(delay);
    const initX = getRandomNumber(minInit, maxInit);
    const initY = getRandomNumber(minInit, maxInit);
    const x = getRandomNumber(minMovement, maxMovement);
