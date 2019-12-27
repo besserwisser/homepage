@@ -16,6 +16,7 @@ const MovableGeoElement = () => {
 
    useEffect( () => {
       const handlePos = e => {
+         e.preventDefault();
          const event = e.touches ? e.touches[0] : e;
          if(!event) 
             return;
